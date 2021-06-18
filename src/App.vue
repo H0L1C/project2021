@@ -1,7 +1,11 @@
 <template>
   <Top />
-  <Menu />
-  <Hamburger />
+  <mq-layout :mq="['xl', 'lg']">
+    <Menu />
+  </mq-layout>
+  <mq-layout :mq="['md', 'sm', 'xs']">
+    <Hamburger />
+  </mq-layout>
   <About />
   <Outline />
   <Projects />

@@ -1,7 +1,7 @@
 <template>
-  <div class="topSection">
+  <section id="Top" class="topSection">
     <h1>PROJECT ONLINE EXHIBITION 2021</h1>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -1,6 +1,5 @@
 module.exports = {
-    publicPath: '/',
-    outputDir: 'docs'
-  }
+  publicPath: '/project2021/',
+  outputDir: 'docs'
+}
 
-  

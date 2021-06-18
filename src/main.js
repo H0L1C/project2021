@@ -4,16 +4,15 @@ import VueMq from "vue3-mq";
 import VueLazyLoad from 'vue3-lazyload'
 
 const app = createApp(App)
-app.mount('#app')
 
 let VueScrollTo = require('vue-scrollto');
 
 app.use(VueMq, {
     breakpoints: {
         xs: 321,
-        s: 416,
-        m: 641,
-        l: 960,
+        sm: 416,
+        md: 641,
+        lg: 960,
         xl: Infinity
     },
     defaultBreakpoint: 'l'
@@ -38,3 +37,5 @@ app.use(VueLazyLoad, {
     attempt: 1,
     throttleWait: 50
 });
+
+app.mount('#app')
