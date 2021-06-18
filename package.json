@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-scrollto": "^2.20.0",
+    "vue3-lazyload": "^0.2.2-beta",
+    "vue3-mq": "^2.3.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
