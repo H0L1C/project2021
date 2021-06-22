@@ -11,7 +11,7 @@ app.use(VueMq, {
     breakpoints: {
         xs: 321,
         sm: 416,
-        md: 641,
+        md: 690,
         lg: 960,
         xl: Infinity
     },

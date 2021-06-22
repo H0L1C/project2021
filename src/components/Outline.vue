@@ -22,20 +22,22 @@
           <div class="timeLineTitle">
             <h4>タイムテーブル</h4>
           </div>
-          <ul class="startTimeWrap">
-            <li
-              class="startTime"
-              v-for="startTime in startTimes"
-              :key="startTime.sTime"
-            >
-              <p>{{ startTime.sTime }}</p>
-            </li>
-          </ul>
-          <ul class="eventsWrap">
-            <li class="event" v-for="event of 6" :key="event">
-              <p>第{{ event }}回</p>
-            </li>
-          </ul>
+          <div class="startTimeEventsWrap">
+            <ul class="startTimeWrap">
+              <li
+                class="startTime"
+                v-for="startTime in startTimes"
+                :key="startTime.sTime"
+              >
+                <p>{{ startTime.sTime }}</p>
+              </li>
+            </ul>
+            <ul class="eventsWrap">
+              <li class="event" v-for="event of 6" :key="event">
+                <p>第{{ event }}回</p>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="venueFormatWrap">
@@ -124,12 +126,11 @@ export default {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr minmax(1fr, 50px);
   box-shadow: 0px 1px 3px 0px var(--shadow-black);
   border-radius: 10px;
   width: 100%;
   height: 100%;
-  line-height: 60px;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -146,18 +147,25 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 3rem 0 6rem 0;
+  overflow: hidden;
+}
+
+.venueFormatWrap p {
+  margin: 0;
+  padding: 20px;
 }
 
 .venueWrap,
 .formatWrap {
-  grid-template-columns: 1fr;
   width: 48%;
+  grid-template-columns: 1fr;
   border-radius: 6px;
 }
 
 .venueTitle,
 .formatTitle,
 .timeLineTitle {
+  max-height: 50px;
   border-radius: 6px 6px 0 0;
   text-align: center;
   background-color: var(--menu-green);
@@ -231,23 +239,36 @@ li {
 
 .venue,
 .format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
+  height: 100px;
 }
 
 .timeLineWrap {
   position: relative;
   display: grid;
-  grid-template-rows: 0.5fr 0.6fr 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr;
   background-color: var(--bg-white);
   box-shadow: 0px 1px 3px 0px var(--shadow-black);
   margin: 3rem 0 0 0;
   border-radius: 6px;
+  overflow: hidden;
+}
+
+.startTimeEventsWrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 20px;
 }
 
 .startTimeWrap,
 .eventsWrap {
   display: grid;
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  grid-template-columns: repeat(6, minmax(90px, 1fr));
   padding: 0 20px 0 20px;
 }
 
@@ -493,6 +514,107 @@ li {
     transform: translateY(-80rem) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .dateTimeWrap,
+  .venueWrap,
+  .formatWrap {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .startTimeEventsWrap {
+    display: grid;
+    grid-template-columns: minmax(80px, 1fr) 3fr;
+    grid-template-rows: 1fr;
+    padding: 20px 10px;
+  }
+
+  .startTimeWrap,
+  .eventsWrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    padding: 20px;
+  }
+
+  .startTimeWrap {
+    margin: 0;
+  }
+
+  .startTime,
+  .event {
+    font-size: 0.9rem;
+    line-height: 60px;
+  }
+
+  .event {
+    border-left: 0;
+  }
+
+  .startTime::before {
+    margin: 0 0 0 -0.3rem;
+  }
+
+  .venueFormatWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px 0;
+  }
+
+  .venueWrap,
+  .formatWrap {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .dateTimeWrap {
+    grid-template-rows: 0.5fr minmax(1fr, 50px) minmax(1fr, 50px);
+    grid-template-columns: 1fr;
+    font-size: 1.4rem;
+  }
+
+  .date {
+    grid-row: 2;
+    grid-column: 1;
+    border-radius: 0;
+  }
+
+  .time {
+    grid-row: 3;
+    grid-column: 1;
+    border-radius: 0 0 6px 6px;
+  }
+
+  .date p {
+    margin: 0 10px;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: solid 2px;
+    border-radius: 0;
+  }
+
+  .time p {
+    margin: 0 10px;
+    padding: 10px 0;
+    border: 0;
+    border-top: solid 2px;
+    border-radius: 0;
+  }
+
+  .startTime p {
+    padding-left: 6px;
+  }
+
+  .startTimeWrap,
+  .eventsWrap {
+    padding: 4px;
   }
 }
 </style>

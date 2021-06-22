@@ -139,4 +139,24 @@ h2 {
     top: 1100%;
   }
 }
+
+@media screen and (max-width: 959px) {
+}
+
+@media screen and (max-width: 690px) {
+}
+
+@media screen and (max-width: 415px) {
+  .titlesWrap h1 {
+    font-size: 2.8em !important;
+  }
+
+  .animLine:nth-child(1) {
+    left: 1%;
+  }
+
+  .animLine:nth-child(3) {
+    left: 99%;
+  }
+}
 </style>

@@ -65,7 +65,7 @@ export default {
 }
 
 .webLinkWrap {
-  width: 60%;
+  width: 80%;
   height: 60px;
   text-align: center;
   background-color: var(--bg-white);
@@ -115,7 +115,7 @@ export default {
 }
 
 .copyright {
-  margin: 40px 0;
+  margin: 40px;
   text-align: center;
   font-size: 0.8rem;
   white-space: pre-wrap;

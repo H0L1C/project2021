@@ -164,5 +164,18 @@ p {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 959px) {
+}
+
+@media screen and (max-width: 690px) {
+}
+
+@media screen and (max-width: 415px) {
+  .sectionTextWrap {
+    padding: 10px;
+    margin-bottom: 10rem;
+  }
+}
 </style>
 
