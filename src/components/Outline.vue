@@ -616,5 +616,9 @@ li {
   .eventsWrap {
     padding: 4px;
   }
+
+  .joinTitle {
+    margin: 30px 0 60px 0;
+  }
 }
 </style>

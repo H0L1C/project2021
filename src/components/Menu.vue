@@ -44,7 +44,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style>
 .menu {
   position: fixed;
   display: inline-block;
@@ -59,7 +59,7 @@ export default {};
   z-index: 9997;
   user-select: none;
 }
-ul {
+.menu ul {
   position: relative;
   height: 30px;
   margin: 0;
@@ -70,7 +70,7 @@ ul {
   justify-content: space-around;
 }
 
-li {
+.menu li {
   position: relative;
   display: inline-block;
   top: 0;
@@ -113,10 +113,5 @@ li {
 .outlineLink:hover::after,
 .contentsLink:hover::after {
   transform: scale(1, 1);
-}
-
-h2 {
-  color: var(--text-white);
-  text-align: center;
 }
 </style>

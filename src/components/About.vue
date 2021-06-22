@@ -173,7 +173,6 @@ p {
 
 @media screen and (max-width: 415px) {
   .sectionTextWrap {
-    padding: 10px;
     margin-bottom: 10rem;
   }
 }
