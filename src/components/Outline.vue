@@ -123,7 +123,6 @@ export default {
 .dateTimeWrap,
 .venueWrap,
 .formatWrap {
-  position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 0.5fr minmax(50px, 1fr);
@@ -133,6 +132,7 @@ export default {
   height: 100%;
   font-size: 1.8rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .dateTimeWrap {
@@ -239,7 +239,11 @@ li {
 
 .venue,
 .format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
+  height: 100px;
 }
 
 .timeLineWrap {
