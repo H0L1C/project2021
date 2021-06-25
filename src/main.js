@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import VueMq from "vue3-mq";
 import VueLazyLoad from 'vue3-lazyload'
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 const app = createApp(App)
 

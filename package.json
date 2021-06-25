@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "smoothscroll-polyfill": "^0.4.4",
     "vue": "^3.0.0",
     "vue-scrollto": "^2.20.0",
     "vue3-lazyload": "^0.2.2-beta",
