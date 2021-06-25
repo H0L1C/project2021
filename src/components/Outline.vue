@@ -123,6 +123,7 @@ export default {
 .dateTimeWrap,
 .venueWrap,
 .formatWrap {
+  position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 0.5fr minmax(50px, 1fr);
@@ -158,6 +159,7 @@ export default {
 .venueWrap,
 .formatWrap {
   width: 48%;
+  height: 150px;
   grid-template-columns: 1fr;
   border-radius: 6px;
 }
@@ -169,6 +171,18 @@ export default {
   border-radius: 6px 6px 0 0;
   text-align: center;
   background-color: var(--menu-green);
+}
+
+.venue,
+.format {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  top: 50px;
+  font-size: 1.2rem;
 }
 
 .joinTitle {
@@ -235,15 +249,6 @@ li {
 .time p {
   border-left: solid 2px;
   border-radius: 1px;
-}
-
-.venue,
-.format {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  height: 100px;
 }
 
 .timeLineWrap {
