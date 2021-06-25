@@ -75,6 +75,9 @@ export default {
   right: 20px;
   padding: 0.5em 1.5em 0.5em 1.5em;
   z-index: 9997;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   cursor: pointer;
   transition: width 0.4s ease, border-radius 0.2s ease-out;

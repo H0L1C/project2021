@@ -4,10 +4,9 @@ import VueMq from "vue3-mq";
 import VueLazyLoad from 'vue3-lazyload'
 import smoothscroll from 'smoothscroll-polyfill';
 
-smoothscroll.polyfill();
-
 const app = createApp(App)
 
+smoothscroll.polyfill();
 let VueScrollTo = require('vue-scrollto');
 
 app.use(VueMq, {

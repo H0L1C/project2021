@@ -104,17 +104,20 @@ p {
   height: 500px;
   transform-origin: 50% 50%;
   border-radius: 42%;
+  -webkit-animation: wave 20s infinite linear;
   animation: wave 20s infinite linear;
   opacity: 0.4;
 }
 
 .animWave:nth-child(2) {
+  -webkit-animation: wave 26s infinite linear;
   animation: wave 26s infinite linear;
   opacity: 0.1;
   background-color: var(--text-white);
 }
 
 .animWave:nth-child(3) {
+  -webkit-animation: wave 18s 10s infinite linear;
   animation: wave 18s 10s infinite linear;
   opacity: 1;
 }
@@ -155,6 +158,15 @@ p {
   top: 40%;
   left: 60%;
   opacity: 0.6;
+}
+
+@-webkit-keyframes wave {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes wave {

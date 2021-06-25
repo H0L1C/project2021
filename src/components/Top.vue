@@ -56,13 +56,18 @@ h2 {
 }
 
 h1 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: 9801;
   bottom: 20%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
 h1:nth-child(2) {
+  -webkit-clip-path: polygon(99% 0, 0 99%, 99% 99%);
   clip-path: polygon(99% 0, 0 99%, 99% 99%);
   color: var(--text-green);
   z-index: 9800;
@@ -109,8 +114,11 @@ h2 {
     #ffffff 75%,
     #ffffff 100%
   );
+  -webkit-animation: drop 7s 0s infinite;
   animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
 
@@ -119,6 +127,7 @@ h2 {
 }
 
 .animLine:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
@@ -127,14 +136,23 @@ h2 {
 }
 
 .animLine:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 1100%;
+  }
 }
 
 @keyframes drop {
   0% {
     top: -50%;
   }
-
   100% {
     top: 1100%;
   }
@@ -150,11 +168,9 @@ h2 {
   .titlesWrap h1 {
     font-size: 2.8em !important;
   }
-
   .animLine:nth-child(1) {
     left: 1%;
   }
-
   .animLine:nth-child(3) {
     left: 99%;
   }

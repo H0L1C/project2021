@@ -379,6 +379,7 @@ li {
   color: var(--menu-green);
   background-color: var(--text-white);
   transition: all 0.3s ease-in-out;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
@@ -432,6 +433,7 @@ li {
   width: 20px;
   height: 20px;
   background: rgba(250, 250, 250, 0.2);
+  -webkit-animation: cube 30s linear infinite;
   animation: cube 30s linear infinite;
   bottom: -150px;
 }
@@ -440,6 +442,7 @@ li {
   left: 25%;
   width: 80px;
   height: 80px;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 
@@ -447,7 +450,9 @@ li {
   left: 10%;
   width: 20px;
   height: 20px;
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  -webkit-animation-duration: 12s;
   animation-duration: 12s;
 }
 
@@ -455,6 +460,7 @@ li {
   left: 70%;
   width: 20px;
   height: 20px;
+  -webkit-animation-delay: 4s;
   animation-delay: 4s;
 }
 
@@ -462,7 +468,9 @@ li {
   left: 40%;
   width: 60px;
   height: 60px;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  -webkit-animation-duration: 18s;
   animation-duration: 18s;
 }
 
@@ -470,6 +478,7 @@ li {
   left: 65%;
   width: 20px;
   height: 20px;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 
@@ -477,6 +486,7 @@ li {
   left: 75%;
   width: 110px;
   height: 110px;
+  -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 
@@ -484,6 +494,7 @@ li {
   left: 35%;
   width: 150px;
   height: 150px;
+  -webkit-animation-delay: 7s;
   animation-delay: 7s;
 }
 
@@ -491,7 +502,9 @@ li {
   left: 50%;
   width: 25px;
   height: 25px;
+  -webkit-animation-delay: 15s;
   animation-delay: 15s;
+  -webkit-animation-duration: 45s;
   animation-duration: 45s;
 }
 
@@ -499,7 +512,9 @@ li {
   left: 20%;
   width: 15px;
   height: 15px;
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  -webkit-animation-duration: 35s;
   animation-duration: 35s;
 }
 
@@ -507,8 +522,24 @@ li {
   left: 85%;
   width: 150px;
   height: 150px;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  -webkit-animation-duration: 11s;
   animation-duration: 11s;
+}
+
+@-webkit-keyframes cube {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.6;
+    border-radius: 10%;
+  }
+
+  100% {
+    transform: translateY(-80rem) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
 
 @keyframes cube {
