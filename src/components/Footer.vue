@@ -38,7 +38,7 @@ export default {
       netWebText: "ネットワーク情報学部",
       WebText: "公式サイト",
       copyrightText:
-        "© 2021- School of Network and Information, SENSHU University ALL Rights Reserved.",
+        "© 2021 School of Network and Information, SENSHU University ALL Rights Reserved.",
     };
   },
 };

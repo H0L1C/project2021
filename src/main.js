@@ -22,8 +22,8 @@ app.use(VueMq, {
 
 app.use(VueScrollTo, {
     container: "body",
-    duration: 50,
-    easing: "ease-in",
+    duration: 400,
+    easing: "ease",
     offset: 0,
     force: true,
     cancelable: true,
