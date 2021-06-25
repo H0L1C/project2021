@@ -35,7 +35,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.loading = false;
-    }, 100);
+    }, 1000);
   },
   components: {
     Top,
@@ -52,6 +52,9 @@ export default {
 <style>
 .loadingAnim {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   margin: 0;

@@ -126,7 +126,7 @@ export default {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 0.5fr minmax(1fr, 50px);
+  grid-template-rows: 0.5fr minmax(50px, 1fr);
   box-shadow: 0px 1px 3px 0px var(--shadow-black);
   border-radius: 10px;
   width: 100%;
@@ -331,7 +331,8 @@ li {
 }
 
 .event p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--text-black);
 }
 
@@ -374,6 +375,8 @@ li {
   background-color: var(--text-white);
   transition: all 0.3s ease-in-out;
   backface-visibility: hidden;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .intWrap:hover,

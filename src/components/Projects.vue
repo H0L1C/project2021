@@ -51,8 +51,9 @@ export default {
         {
           id: 2,
           pjName: "飯塚プロジェクト",
-          pjTitle: "null",
-          pjText: "null",
+          pjTitle: "専大学版モノポリー制作 \n〜大学を知るためのボードゲーム〜",
+          pjText:
+            "飯塚プロジェクトではビジネスゲームに関する研究をテーマに活動しています。ビジネスゲームの一つとして「モノポリー」を題材とし、そこから専修大学オリジナルのビジネスゲームを作成することにしました。モノポリー（英語：Monopoly）は20世紀初めに米国生まれたボードゲームの一つで、現在特許は期限切れとなり、著作権も存在しないため、モノポリー形式を踏襲したゲームが独立系のゲームメーカーから数多く開発されています。「モノポリー」から得るビジネスの知識には取引、土地の売買、競売、資金調達といった要素がありますが、それらの要素からヒントを得て新たな要素を自分達で考案しそれをもとに作成していく予定です。また、作成後もただ作って終わりではなく自分達が実際にプレイしどういった戦略でゲームに勝つかどうしたら相手に不利な状況を作れるのかといった戦略を分析し機能に反映させる予定です。",
           pjImg: require("../assets/images/project_02.png"),
           pjLink: "https://www.ne.senshu-u.ac.jp/~proj2021-02",
         },
@@ -372,13 +373,18 @@ h5 {
   height: 162px;
   margin: 10px 9px;
   box-shadow: 0px 1px 3px 0px #00000026;
+  background-image: url("../assets/images/project_load.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .projectName {
   margin: 0 9px 10px 24px;
   font-size: 0.8rem;
   opacity: 0.7;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .projectTitle {
@@ -388,7 +394,8 @@ h5 {
   margin: 0 24px;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   overflow: hidden;
 }
 
@@ -400,7 +407,8 @@ h5 {
   font-size: 0.9rem;
   letter-spacing: 1.3px;
   line-height: 1.75;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 @media screen and (max-width: 959px) {

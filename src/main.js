@@ -33,9 +33,7 @@ app.use(VueScrollTo, {
 })
 
 app.use(VueLazyLoad, {
-    preLoad: 1.3,
-    attempt: 1,
-    throttleWait: 50
-});
+    log: false,
+})
 
 app.mount('#app')

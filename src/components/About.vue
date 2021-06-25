@@ -68,7 +68,8 @@ li {
 }
 
 .sectionTextWrap p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--text-black);
   letter-spacing: 1;
   line-height: 1.75;
