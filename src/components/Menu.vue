@@ -85,7 +85,7 @@ export default {};
   font-family: "Montserrat", "Noto Sans JP", "Helvetica Neue", "Helvetica",
     "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
     sans-serif;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--text-white);
   transition: all 0.3s ease-in-out;
 }

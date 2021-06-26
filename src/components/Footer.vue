@@ -106,12 +106,12 @@ export default {
 
 .linkText {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .webText {
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .copyright {

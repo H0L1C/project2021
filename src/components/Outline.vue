@@ -203,7 +203,7 @@ h4 {
 }
 
 p {
-  font-weight: 600;
+  font-weight: bold;
   color: var(--text-green);
   text-shadow: 0px 1px 1px var(--dot-black);
   margin: 10px 0;
@@ -373,7 +373,7 @@ li {
   height: 24px;
   padding: 0.2rem 1.4rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
   border-radius: 6px 6px 6px 0;
   border: solid 2px var(--text-white);
   color: var(--menu-green);
