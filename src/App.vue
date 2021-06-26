@@ -35,7 +35,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.loading = false;
-    }, 300);
+    }, 400);
   },
   components: {
     Top,
