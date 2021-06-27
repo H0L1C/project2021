@@ -22,7 +22,7 @@ app.use(VueMq, {
 
 app.use(VueScrollTo, {
     container: "body",
-    duration: 400,
+    duration: 120,
     easing: "ease",
     offset: 0,
     force: true,
