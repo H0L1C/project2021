@@ -1,24 +1,19 @@
-# project2021
+# 専修大学 ネットワーク情報学部 ネットワーク情報学科 プロジェクト発表会Webサイト2021
 
-## Project setup
-```
-npm install
-```
+## 公開先
+https://www.ne.senshu-u.ac.jp/project2021
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 中間発表会 
+日時：2021/07/10 13:00~16:00  
+会場：GoogleMeetによるオンライン開催  
+形式：スライドおよび前期成果物を⽤いた口頭発表  
 
-### Compiles and minifies for production
-```
-npm run build
-```
+| タイムテーブル |
+|:-------------|
+|第1回：13:00~  | 
+|第2回：13:30~  | 
+|第3回：14:00~  | 
+|第4回：14:30~  | 
+|第5回：15:00~  |
+|第6回：15:30~  | 
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
