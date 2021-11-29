@@ -375,7 +375,7 @@ h5 {
   height: 162px;
   margin: 10px 9px;
   box-shadow: 0px 1px 3px 0px #00000026;
-  /*background-image: url("../assets/images/project_load.png");*/
+  background-image: url("../assets/images/project_load.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
