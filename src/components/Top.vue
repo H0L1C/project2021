@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       mainTitle: "PROJECT\nONLINE\nEXHIBITION\n2021",
-      subTitle: "専修大学ネットワーク情報学部\nプロジェクト中間発表会",
+      subTitle: "専修大学ネットワーク情報学部\nプロジェクト最終発表会",
     };
   },
 };
