@@ -18,7 +18,7 @@
           </div>
         </div>
 
-        <div class="timeLineWrap">
+        <!--div class="timeLineWrap">
           <div class="timeLineTitle">
             <h4>タイムテーブル</h4>
           </div>
@@ -38,7 +38,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </！div-->
 
         <div class="venueFormatWrap">
           <div class="venueWrap">
@@ -84,10 +84,10 @@
 export default {
   data() {
     return {
-      date: "2021 / 07 / 10",
-      time: "13:00 ~ 16:00",
+      date: "2021 / 12 / 18 (土)",
+      time: "13:00 ~ 17:00",
       venue: "GoogleMeetによるオンライン開催",
-      format: "スライドおよび前期成果物を⽤いた口頭発表",
+      format: "発表資料および成果物を用いた口頭発表",
       startTimes: [
         { sTime: "13:00~" },
         { sTime: "13:30~" },
@@ -99,8 +99,8 @@ export default {
       intLink: "https://classroom.google.com/c/MzMwOTU1MTkwNDEw",
       intLinkText: "GoogleClassroomはこちら",
       extLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLSdyB8h6L5Kyr8VdAr0wW4UNzGPS0WYbItZ-6U2hnRlz-Sjvfw/viewform",
-      extLinkText: "プロジェクト中間発表会に参加希望の関係者の方はこちら",
+        "https://docs.google.com/forms/d/e/1FAIpQLSfMdD18BPWE6hXV9wRNTkLSo3R80DV7mAMs4Qfn6MtZOMm93Q/viewform",
+      extLinkText: "プロジェクト最終発表会に参加希望の関係者の方はこちら",
     };
   },
 };
@@ -366,7 +366,7 @@ li {
 }
 
 .intWrap::before {
-  content: "専修大学生限定！";
+  content: "NE19限定！";
   position: absolute;
   top: -1rem;
   left: 0;
